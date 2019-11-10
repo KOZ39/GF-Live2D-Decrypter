@@ -11,9 +11,9 @@ python setup.py install
 import gflive2d
 
 with open('model.moc.txt', 'rb') as f:
-  decrypt = gflive2d.decrypt(f.read())
+    decrypt = gflive2d.decrypt(f.read())
 with open('model.moc', 'wb') as f:
-  f.write(decrypt)
+    f.write(decrypt)
 ```
 
 **Extension Rename Guide**

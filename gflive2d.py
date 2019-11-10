@@ -3,7 +3,7 @@ def decrypt(encrypt: bytes):
     decrypt = bytearray(length)
     pos = bytearray(16)
 
-    for i in range(0, 16):
+    for i in range(16):
         pos[i] = encrypt[i * 5 + 1]
 
     x = 0
