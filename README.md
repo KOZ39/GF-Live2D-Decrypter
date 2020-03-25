@@ -1,5 +1,5 @@
 # GF Live2D Decrypter
-> Java to Python 3
+> C# to Python 3
 
 ## Install
 ```
@@ -11,9 +11,9 @@ python setup.py install
 import gflive2d
 
 with open('model.moc.txt', 'rb') as f:
-    decrypt = gflive2d.decrypt(f.read())
+    data = gflive2d.decrypt(f.read())
 with open('model.moc', 'wb') as f:
-    f.write(decrypt)
+    f.write(data)
 ```
 
 **Extension Rename Guide**

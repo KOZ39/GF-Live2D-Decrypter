@@ -5,7 +5,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='gflive2d',
-    version='0.1.1',
+    version='0.1.2',
     description="Girls' Frontline Live2D Decrypter",
     url='https://github.com/KOZ39/GF-Live2D-Decrypter',
     author='KOZ39',

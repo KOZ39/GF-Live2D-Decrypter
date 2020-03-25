@@ -5,7 +5,6 @@ def decrypt(encrypt: bytes):
 
     for i in range(16):
         pos[i] = encrypt[i * 5 + 1]
-
     x = 0
     y = -1
     z = 0
@@ -21,12 +20,9 @@ def decrypt(encrypt: bytes):
             elif y != -1:
                 decrypt[z] = encrypt[y + 1] ^ pos[(y - x) % 16]
                 z += 1
-
         y += 1
 
         if z != length:
             continue
-
         break
-
     return decrypt
